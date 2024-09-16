@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eletrônica RGB</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+<body>
+    
+    <div class="tabs">
+        <div class="container">
+            <img src="logorgb.png" alt="Logo RGB" width="70" height="40" class="image">
+        </div>    
+        <button class="aba-botao"  onclick="window.location.href='index.html'">Home</button>
+        <button class="aba-botao" onclick="window.location.href='contato.html'">Contato</button>
+        <button class="aba-botao" onclick="window.location.href='nossoservico.html'">Nosso Serviço</button>
+        <button class="aba-botao" onclick="window.location.href='sobre.html'">Sobre</button>
+    </div>
+    <div class="aba-content">
+        <div class="painel-guias active">
+        </div>
+        <div class="painel-guias">
+        </div>
+    </div>
+    
+    <div class="colortransition">Contatos</div>
+    <ul class="contatos"></ul>
+        <li class="contato-item">
+            <i class="fas fa-phone"></i>
+            <strong>Telefone:</strong> <a href="tel:+5561999999999">(61) 3201-1236</a>
+        </li>
+        <li class="contato-item">
+            <i class="fas fa-envelope"></i>
+            <strong>Email:</strong> <a href="mailto:exemplo@email.com"> eletronicargb@gmail.com</a>
+        </li>
+        <li class="contato-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <strong>Endereço:</strong> QSC 19 Ch 27 Conj. A LT 13 Lj 01
+        </li>
+        <li class="contato-item">
+            <i class="fab fa-facebook"></i>
+            <strong>Facebook:</strong> <a href="https://www.facebook.com/exemplo" target="_blank">facebook.com/exemplo</a>
+        </li>
+    </ul>
+    <br>
+    <div class="colortransition" style="font-size: 20px;">Faça seu orçamento</div>
+    <form class="form-container" id="contact-form" action="https://formspree.io/f/mzzpqkne" method="POST">
+        <input type="text" name="name" placeholder="Seu Nome:" required>
+        <br>
+        <input type="email" name="email" placeholder="Seu E-mail:" required>
+        <br>
+        <input type="tel" name="phone" placeholder="Seu telefone:" required>
+        <br>
+        <textarea name="message" placeholder="Sua mensagem:" required></textarea>
+        <br>
+        <button class="submit" type="submit">Enviar</button>
+    </form>
+    <br>
+    <div style="text-align: center;" class="confirmation" id="confirmation">Mensagem enviada com sucesso!</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

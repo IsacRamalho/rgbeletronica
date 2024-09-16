@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eletrônica RGB</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+<body>
+    
+    <div class="tabs">
+        <div class="container">
+            <img src="logorgb.png" alt="Logo RGB" width="70" height="40" class="image">
+        </div>    
+        <button class="aba-botao"  onclick="window.location.href='index.html'">Home</button>
+        <button class="aba-botao" onclick="window.location.href='contato.html'">Contato</button>
+        <button class="aba-botao" onclick="window.location.href='nossoservico.html'">Nosso Serviço</button>
+        <button class="aba-botao" onclick="window.location.href='sobre.html'">Sobre</button>
+    </div>
+    <button class="fale-conosco">Fale conosco</button>
+    <div class="aba-content">
+        <div class="painel-guias active">
+        </div>
+        <div class="painel-guias">
+        </div>
+    </div>
+    <div class="sec-part">
+        <div class="sec-part-item">
+            <img src="rgbrepresent.gif" alt="RGB Figura" width="300" height="300" class="imagergb">
+            <h2>Consertamos para você os mais variados tipos de eletrônicos.</h2>
+            <p>Venha conhecer nossa loja em Taguatinga.</p>
+        </div>
+    </div>
+    <div class="grid-check-container">
+        <div class="grid-check-item">
+            <div class="box"></div>
+                <i class="check-icon">✓</i>
+                <h3>Mais de 20 anos no mercado.</h3>
+        </div>
+        <div class="grid-check-item">
+            <div class="box"></div>
+                <i class="check-icon">✓</i>
+                <h3>Qualidade e bom preço.</h3>
+        </div>
+        <div class="grid-check-item">
+            <div class="box"></div>
+                <i class="check-icon">✓</i>
+                <h3>Garantia sempre.</h3>
+        </div>
+        <div class="grid-check-item">
+            <div class="box"></div>
+                <i class="check-icon">✓</i>
+                <h3>Orçamento gratuito</h3>
+        </div>
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <h3>Conserto de TVs</h3>
+            <img src="televisao.webp" alt="TV" width="240" height="140" class="image">
+            <p>Consertamos TVs Sony, LG, Samsung e outras</p>
+        </div>
+        <div class="grid-item">
+            <h3>Conserto de Som</h3>
+            <img src="som.jpeg" alt="SOM" width="240" height="140" class="image">
+            <p>Consertamos caixas de som e instrumentos (com especialidade em acordeon)</p>
+        </div>
+        <div class="grid-item">
+            <h3>Venda de Eletrônicos</h3>
+            <img src="eletronicos.jpeg" alt="Eletrônicos" width="240" height="140" class="image">
+            <p>Vendemos controles, fones de ouvido, carregadores, etc.</p>
+        </div>
+    </div>
+
+    <div class="colortransition" style="font-size: 20px;">Faça seu orçamento</div>
+    <form class="form-container" id="contact-form" action="https://formspree.io/f/mzzpqkne" method="POST">
+        <input type="text" name="name" placeholder="Seu Nome:" required>
+        <br>
+        <input type="email" name="email" placeholder="Seu E-mail:" required>
+        <br>
+        <input type="tel" name="phone" placeholder="Seu telefone:" required>
+        <br>
+        <textarea name="message" placeholder="Sua mensagem:" required></textarea>
+        <br>
+        <button class="submit" type="submit">Enviar</button>
+    </form>
+    <br>
+    <div style="text-align: center;" class="confirmation" id="confirmation">Mensagem enviada com sucesso!</div>
+
+
+    <h3 style="text-align: center; font-size: 35px;">Nossa Equipe</h3>
+    <div class="grid-equipe-container">
+        <div class="grid-equipe-item">
+            <img src="laura.jpg" alt="Laura" width="260" height="320" class="imagemequipe">
+            <h3>Laura</h3>
+            <p>Assistente administrativa</p>
+        </div>
+        <div class="grid-equipe-item">
+            <img src="carmende.jpg" alt="José" width="260" height="320" class="imagemequipe">
+            <h3>José C.</h3>
+            <p>CEO e Técnico em Eletrônica</p>
+        </div>
+        <div class="grid-equipe-item">
+            <img src="hugo.jpg" alt="Hugo" width="260" height="320" class="imagemequipe">
+            <h3>Hugo</h3>
+            <p>Técnico em Eletrônica</p>
+        </div>
+    </div>
+    
+<br>
+    <script src="script.js"></script>
+</body>
+</html>
