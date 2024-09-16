@@ -73,7 +73,9 @@ const form = document.getElementById('contact-form');
 const confirmation = document.getElementById('confirmation');
 
 form.addEventListener('submit', function(event) {
-    event.preventDefault(); // Impede o envio padrão do formulário (ALTERADO)
+    event.preventDefault(); // Impede o envio padrão do formulário
+
+    confirmation.style.display = 'none'; // Oculta a mensagem de confirmação antes de enviar
 
     fetch(form.action, {
         method: 'POST',
@@ -83,7 +85,7 @@ form.addEventListener('submit', function(event) {
         }
     }).then(response => {
         if (response.ok) {
-            confirmation.style.display = 'block'; // Exibe mensagem de confirmação (ALTERADO)
+            confirmation.style.display = 'block'; // Exibe a mensagem de confirmação APENAS após o envio bem-sucedido
             form.reset(); // Limpa o formulário
         } else {
             alert('Houve um erro ao enviar o formulário.');
